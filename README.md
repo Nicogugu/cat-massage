@@ -1,6 +1,6 @@
 # Cattaliya Thai Massage — App de Gestion
 
-> Dashboard de gestion complet pour un salon de massage thai, avec design system sur-mesure inspir&eacute; de la marque [Cattaliya Thai Massage](https://cattaliya-thai-massage.com) (Lyon, Croix-Rousse).
+> Dashboard de gestion complet pour un salon de massage thai, avec design system sur-mesure inspiré de la marque [Cattaliya Thai Massage](https://cattaliya-thai-massage.com) (Lyon, Croix-Rousse).
 
 ![React](https://img.shields.io/badge/React_19-61DAFB?style=flat&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
@@ -9,16 +9,16 @@
 
 ---
 
-## Fonctionnalit&eacute;s
+## Fonctionnalités
 
 | Page | Route | Description |
 |------|-------|-------------|
-| **Dashboard** | `/` | KPIs du jour, rendez-vous &agrave; venir, graphique revenus, actions rapides |
+| **Dashboard** | `/` | KPIs du jour, rendez-vous à venir, graphique revenus, actions rapides |
 | **Analyses** | `/analytics` | Chiffre d'affaires N vs N-1, segments clients, performance services, heatmap |
-| **Clients** | `/clients` | CRM avec recherche, fid&eacute;lit&eacute; (Gold/Silver/Bronze), historique visites |
-| **&Eacute;quipe** | `/team` | Fiches th&eacute;rapeutes, sp&eacute;cialisations, certifications, notations |
-| **Calendrier** | `/calendar` | Grille horaire interactive, mini-calendrier, filtre par th&eacute;rapeute |
-| **Services** | `/services` | Catalogue des rituels par cat&eacute;gorie, tarifs, r&eacute;servation |
+| **Clients** | `/clients` | CRM avec recherche, fidélité (Gold/Silver/Bronze), historique visites |
+| **Équipe** | `/team` | Fiches thérapeutes, spécialisations, certifications, notations |
+| **Calendrier** | `/calendar` | Grille horaire interactive, mini-calendrier, filtre par thérapeute |
+| **Services** | `/services` | Catalogue des rituels par catégorie, tarifs, réservation |
 
 ### Responsive
 - **Desktop** : sidebar navigation + header glassmorphism
@@ -28,11 +28,11 @@
 
 ## Design System : Cattaliya Sanctuary
 
-Le design system est document&eacute; dans [`design-system/`](design-system/) avec tokens JSON et documentation compl&egrave;te.
+Le design system est documenté dans [`design-system/`](design-system/) avec tokens JSON et documentation complète.
 
 ### Palette
 
-| R&ocirc;le | Couleur | Hex |
+| Rôle | Couleur | Hex |
 |------|---------|-----|
 | Primary (Prune) | ![#8e496a](https://via.placeholder.com/12/8e496a/8e496a.png) | `#8E496A` |
 | Gold Accent | ![#c49a5c](https://via.placeholder.com/12/c49a5c/c49a5c.png) | `#C49A5C` |
@@ -42,18 +42,18 @@ Le design system est document&eacute; dans [`design-system/`](design-system/) av
 
 ### Typographie
 
-| R&ocirc;le | Police | Usage |
+| Rôle | Police | Usage |
 |------|--------|-------|
 | Display | **Bilbo Swash Caps** | Logo uniquement |
 | Headline | **Marcellus** | Tous les titres de section |
 | Body / Label | **Nunito Sans** | Corps de texte, boutons, metadata |
 
-### Principes cl&eacute;s
-- **No-Line Rule** : pas de bordures pour s&eacute;parer les sections, utiliser les shifts de surface
+### Principes clés
+- **No-Line Rule** : pas de bordures pour séparer les sections, utiliser les shifts de surface
 - **Tonal Layering** : profondeur via les niveaux de surface, pas les ombres
 - **Glassmorphism** : headers sticky avec blur 20px
 - **Pill Buttons** : `border-radius: 50px` pour les CTAs
-- **Gold accent** : utilis&eacute; avec parcimonie (ic&ocirc;nes, CTA sidebar, highlights)
+- **Gold accent** : utilisé avec parcimonie (icônes, CTA sidebar, highlights)
 
 ---
 
@@ -66,11 +66,11 @@ React Router v7
 Material Symbols Outlined (icons)
 ```
 
-Pas de backend — donn&eacute;es mock dans `src/data/`.
+Pas de backend — données mock dans `src/data/`.
 
 ---
 
-## D&eacute;marrage rapide
+## Démarrage rapide
 
 ```bash
 # Cloner
@@ -97,17 +97,17 @@ src/
 │   ├── sidebar/Sidebar.tsx        # Navigation desktop (dark prune)
 │   ├── header/Header.tsx          # Header glassmorphism
 │   ├── bottom-nav/BottomNav.tsx   # Navigation mobile
-│   ├── ui/                        # Composants r&eacute;utilisables
+│   ├── ui/                        # Composants réutilisables
 │   │   ├── Icon, Button, Card, Badge, Avatar
 │   │   ├── KpiCard, SearchInput, PageHeader
-│   │   ├── ProgressBar, DatePill
+│   │   └── ProgressBar, DatePill
 │   └── charts/BarChart.tsx        # Graphiques CSS
 ├── pages/
 │   ├── dashboard/                 # Tableau de bord
 │   ├── analytics/                 # Analyses & statistiques
 │   ├── clients/                   # Gestion clients
-│   ├── team/                      # Gestion &eacute;quipe
-│   ├── calendar/                  # Calendrier r&eacute;servations
+│   ├── team/                      # Gestion équipe
+│   ├── calendar/                  # Calendrier réservations
 │   └── services/                  # Catalogue services
 ├── data/                          # Mock data (types, appointments, clients...)
 └── index.css                      # Fonts + utilitaires glass/shadow
@@ -117,9 +117,9 @@ src/
 
 ## Origine du projet
 
-Les maquettes initiales ont &eacute;t&eacute; g&eacute;n&eacute;r&eacute;es avec [Google Stitch](https://stitch.withgoogle.com), puis enti&egrave;rement personnalis&eacute;es pour coller &agrave; l'identit&eacute; visuelle de Cattaliya Thai Massage. Les fichiers HTML source sont conserv&eacute;s dans `stitch-screens/` pour r&eacute;f&eacute;rence.
+Les maquettes initiales ont été générées avec [Google Stitch](https://stitch.withgoogle.com), puis entièrement personnalisées pour coller à l'identité visuelle de Cattaliya Thai Massage. Les fichiers HTML source sont conservés dans `stitch-screens/` pour référence.
 
-L'app React a &eacute;t&eacute; construite avec **Claude Code** en utilisant des agents parall&eacute;lis&eacute;s — 6 agents simultan&eacute;s pour les 6 pages, apr&egrave;s construction du socle commun (composants, layout, data).
+L'app React a été construite avec **Claude Code** en utilisant des agents parallélisés — 6 agents simultanés pour les 6 pages, après construction du socle commun (composants, layout, data).
 
 ---
 
